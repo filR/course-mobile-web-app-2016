@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Camera</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <input type="file" id="file">
+    <label class="btn" for="file">
+        <i class="fa fa-camera"></i>
+        Take Photo
+    </label>
+
+    <img id="preview">
+    
+<!--    <a href="#" class="btn yellow small" action="toggle-effect">Apply Effect</a>-->
+
+    <input type="range" max="360" action="adjust-effect">
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

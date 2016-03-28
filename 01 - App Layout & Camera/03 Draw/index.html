@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Camera</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas></canvas>
+
+    <i class="fa fa-cog" action="toggle-settings"></i>
+
+    <img src="coloring-page.png" class="overlay">
+
+    <div class="settings">
+        <div class="size">
+            <a href="#" action="change-size" size="10"></a>
+            <a href="#" action="change-size" size="30"></a>
+            <a href="#" action="change-size" size="50"></a>
+            <a href="#" action="change-size" size="80"></a>            
+        </div>
+        <div class="color">
+            <a href="#" action="change-color" class="yellow" color="#E3EB64"></a>
+            <a href="#" action="change-color" class="teal" color="#A7EBCA"></a>
+            <a href="#" action="change-color" class="white" color="#FFFFFF"></a>
+            <a href="#" action="change-color" class="grey" color="#868E80"></a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

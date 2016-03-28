@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    min-height: 100%;
+}
+
+canvas {
+    background-color: #F51E50;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+[action="toggle-settings"] {
+    position: fixed;
+    top: 3vmin;
+    right: 3vmin;
+    color: white;
+    font-size: 6vmin;
+}
+
+
+/* -- settings overlay -- */
+
+.settings {
+    position: fixed;
+    top: 30vh;
+    left: 10vw;
+    right: 10vw;
+    background: white;
+    padding: 10vmin 0;
+    display: none; /* hide by default */
+    font-size: 4vmin;
+    text-align: center;
+}
+
+.settings > div:last-child {
+    margin-top: 3vh;
+}
+
+/* colors */
+.settings [action=change-color],
+.settings [action=change-size] {
+    display: inline-block;
+    border-radius: 50%;
+    width: 8vmin;
+    height: 8vmin;
+    border: 1vmin solid hsla(0, 0%, 0%, 0.8);
+    background-color: grey;
+    margin: 1vmin;
+}
+
+.settings [action=change-color].yellow {
+    background-color: #E3EB64;
+}
+.settings [action=change-color].teal {
+    background-color: #A7EBCA;
+}
+.settings [action=change-color].white {
+    background-color: #FFFFFF;
+}
+.settings [action=change-color].grey {
+    background-color: #868E80;
+}
+
+/* size */
+.settings [action=change-size] {
+    width: 0;
+    height: 0;
+    border-width: 2vmin;
+}
+
+.settings [action=change-size]:nth-of-type(2) {
+    border-width: 2.6vmin;
+}
+
+.settings [action=change-size]:nth-of-type(3) {
+    border-width: 3.4vmin;
+}
+
+.settings [action=change-size]:nth-of-type(4) {
+    border-width: 4vmin;
+}
+
+
+/* -- coloring page overlay -- */
+
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100vw;
+    max-height: 100vh;
+    pointer-events: none;
+}
