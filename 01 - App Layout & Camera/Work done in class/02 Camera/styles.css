@@ -1,0 +1,7 @@
+img {
+    width: 100vmin;
+    height: 100vmin;
+    object-fit: cover;
+    
+    -webkit-filter: hue-rotate(270deg); 
+}
