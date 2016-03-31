@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+/* prevent scrolling of the page */
 html {
     height: 100%;
     overflow: hidden;
@@ -12,6 +13,7 @@ body {
     min-height: 100%;
 }
 
+/* our drawing element */
 canvas {
     background-color: #F51E50;
     position: fixed;
@@ -19,6 +21,7 @@ canvas {
     top: 0;
 }
 
+/* settings button */
 [action="toggle-settings"] {
     position: fixed;
     top: 3vmin;
