@@ -40,3 +40,9 @@ Then open the address [http://localhost:8080/]() in your browser.
 #### Win
 
 Download and install [MAMP](https://www.mamp.info/) or similar to host a folder.
+
+## Other tools
+
+* iOS simulator on Mac: [Install Xcode](https://developer.apple.com/xcode/)
+* Android emulator: [Install the Android SDK](https://developer.android.com/sdk/index.html)
+* Device testing in your browser: [Browserstack](https://www.browserstack.com/)
