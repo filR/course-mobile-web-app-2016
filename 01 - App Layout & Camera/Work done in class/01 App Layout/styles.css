@@ -17,8 +17,20 @@ header {
     font-size: 3vmin;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background-color: #dFb046;
+    transition: 0.5s;
+}
 
-
+nav.hide {
+    transform: translateX(-100vw);
+    
+}
 
 
 
