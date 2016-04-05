@@ -5,6 +5,13 @@ These are the course materials for the University of Applied Sciences Upper Aust
 [Link to the internal Elearning Forum](https://elearning.fh-hagenberg.at/course/view.php?id=5487)
 
 
+# Classes
+
+#### 01 - Page Layout & Camera
+
+<img src="http://i.imgur.com/NPlQjiZ.jpg" height="250">
+<img src="http://i.imgur.com/jVMHHvS.jpg" height="250">
+
 # How-Tos
 
 ## Debug Websites on your Device from your Computer
