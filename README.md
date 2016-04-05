@@ -12,6 +12,10 @@ These are the course materials for the University of Applied Sciences Upper Aust
 <img src="http://i.imgur.com/NPlQjiZ.jpg" height="250">
 <img src="http://i.imgur.com/jVMHHvS.jpg" height="250">
 
+#### 02 - Motion
+
+<img src="http://i.imgur.com/FjDD8m4.jpg" height="250">
+
 # How-Tos
 
 ## Debug Websites on your Device from your Computer
