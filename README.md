@@ -18,7 +18,7 @@ These are the course materials for the University of Applied Sciences Upper Aust
 
 #### 03 - Acceleration & Rotation Sensors and 3D
 
-<img src="http://i.imgur.com/2xdaPBj.gifv" height="250">
+<img src="http://i.imgur.com/lj2JAd3.png" height="250">
 
 
 
