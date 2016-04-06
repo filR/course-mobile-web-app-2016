@@ -5,3 +5,13 @@
     font-family: sans-serif;
 }
 
+.indicator {
+    width: 100vw;
+    height: 200px;
+    transition: 0.3s;
+    margin-top: 5vh;
+}
+
+img {
+    margin-bottom: 5vh;
+}

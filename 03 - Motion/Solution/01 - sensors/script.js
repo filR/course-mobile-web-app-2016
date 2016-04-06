@@ -1,9 +1,12 @@
 'use strict';
 
+const COLOR_MULTIPLIER = 50;
+
 // -- acceleration
 let sliderX = document.querySelector('#x');
 let sliderY = document.querySelector('#y');
 let sliderZ = document.querySelector('#z');
+let indicator = document.querySelector('.indicator');
 
 function handleMotionEvent(event) {
     let x = event.acceleration.x || event.accelerationIncludingGravity.x;
@@ -19,6 +22,14 @@ function handleMotionEvent(event) {
             // console.log(i);
         }
     }    
+    
+    // set colour of indicator
+    let value = Math.max(x, y, z);
+    value *= COLOR_MULTIPLIER;
+    value = Math.round(value);
+    value = Math.min(value, 100);
+    let color = `hsl(0, ${value}%, 50%)`;
+    indicator.style.backgroundColor = color;
 }
 window.addEventListener("devicemotion", handleMotionEvent, true);
 
