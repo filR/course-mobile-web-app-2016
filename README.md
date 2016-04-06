@@ -7,14 +7,20 @@ These are the course materials for the University of Applied Sciences Upper Aust
 
 # Classes
 
-#### 01 - Page Layout & Camera
+#### 01 - Page Layout and Camera
 
 <img src="http://i.imgur.com/NPlQjiZ.jpg" height="250">
 <img src="http://i.imgur.com/jVMHHvS.jpg" height="250">
 
-#### 02 - Motion
+#### 02 - Mapping and Geolocation
 
 <img src="http://i.imgur.com/FjDD8m4.jpg" height="250">
+
+#### 03 - Acceleration & Rotation Sensors and 3D
+
+<img src="http://i.imgur.com/2xdaPBj.gifv" height="250">
+
+
 
 # How-Tos
 
