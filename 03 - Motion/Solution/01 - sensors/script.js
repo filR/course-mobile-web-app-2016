@@ -1,8 +1,8 @@
 'use strict';
 
+// -- acceleration
 const COLOR_MULTIPLIER = 50;
 
-// -- acceleration
 let sliderX = document.querySelector('#x');
 let sliderY = document.querySelector('#y');
 let sliderZ = document.querySelector('#z');
@@ -13,10 +13,12 @@ function handleMotionEvent(event) {
     let y = event.acceleration.y || event.accelerationIncludingGravity.y;
     let z = event.acceleration.z || event.accelerationIncludingGravity.z - 9.8;
 
+    // set value of input range sliders
     sliderX.value = x;
     sliderY.value = y;
     sliderZ.value = z;
     
+    // output largest value
     for (let i of [x, y, z]) {
         if (i > 0.5) {
             // console.log(i);
@@ -25,12 +27,15 @@ function handleMotionEvent(event) {
     
     // set colour of indicator
     let value = Math.max(x, y, z);
-    value *= COLOR_MULTIPLIER;
-    value = Math.round(value);
-    value = Math.min(value, 100);
+    
+    value *= COLOR_MULTIPLIER; // scale value
+    value = Math.round(value); // only whole numbers
+    value = Math.min(value, 100); // max 100
+    
     let color = `hsl(0, ${value}%, 50%)`;
     indicator.style.backgroundColor = color;
 }
+
 window.addEventListener("devicemotion", handleMotionEvent, true);
 
 
