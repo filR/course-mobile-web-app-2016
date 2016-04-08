@@ -23,9 +23,9 @@
         var z = 0;
         
         function handleOrientation(event) {
-            x = event.beta;
-            y = event.gamma;
-            z = event.alpha;
+            x = event.beta * (Math.PI / 180);
+            y = event.gamma * (Math.PI / 180);
+            z = event.alpha * (Math.PI / 180);
         }
 
         window.addEventListener('deviceorientation', handleOrientation);
