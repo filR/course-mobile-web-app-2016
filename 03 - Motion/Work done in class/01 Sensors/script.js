@@ -30,16 +30,18 @@ window.addEventListener("devicemotion", handleMotionEvent, true);
 // 10.26.99.22:8000
 
 
-function handleOrientation(event) {
+// -- rotation
 
-    
-    
+function handleOrientation(event) {    
     console.log('alpha', event.alpha, 'beta', event.beta, 'gamma', event.gamma);
 
+    
+    var css = 'rotateX(' + event.beta + 'deg) ' +
+              'rotateY(' + -event.gamma + 'deg) ' +
+              'rotateZ(' + -(event.alpha - 180) + 'deg)';
+    
+    document.querySelector('img').style.transform = css;
 }
-
-
-
 
 window.addEventListener('deviceorientation', handleOrientation);
 

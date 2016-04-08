@@ -3,6 +3,12 @@ body {
     transition: 0.3s;
 }
 
+img {
+    width: 50vw;
+    height: 50vw;
+    object-fit: cover;
+}
+
 ul {
     font-family: monospace;
 }
