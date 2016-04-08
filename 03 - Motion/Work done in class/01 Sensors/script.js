@@ -12,7 +12,7 @@ function handleMotionEvent(event) {
     document.querySelector('#y').innerText = y;
     document.querySelector('#z').innerText = z;
     
-    console.log(x, y, z);
+//    console.log(x, y, z);
     
     var max = Math.max(x, y, z); // highest acceleration
     
@@ -26,6 +26,25 @@ function handleMotionEvent(event) {
 }
 
 window.addEventListener("devicemotion", handleMotionEvent, true);
+
+// 10.26.99.22:8000
+
+
+function handleOrientation(event) {
+
+    
+    
+    console.log('alpha', event.alpha, 'beta', event.beta, 'gamma', event.gamma);
+
+}
+
+
+
+
+window.addEventListener('deviceorientation', handleOrientation);
+
+
+
 
 
 
