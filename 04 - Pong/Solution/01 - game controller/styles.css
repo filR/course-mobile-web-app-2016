@@ -1,0 +1,22 @@
+body {
+    overflow: hidden;
+    background: #E3EB64;
+}
+
+#player {
+    background: #F51E50;
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#floor {
+    background: #F51E50;
+    height: calc(50% - 60px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
