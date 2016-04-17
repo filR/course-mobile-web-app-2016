@@ -9,17 +9,31 @@ These are the course materials for the University of Applied Sciences Upper Aust
 
 #### 01 - Page Layout and Camera
 
+* Use modern CSS, such as flexbox and the viewport unit, to create an app layout.
+* Create an app with which the user can take a photo (camera or photo stream) and apply an effect on it.
+
 <img src="http://i.imgur.com/NPlQjiZ.jpg" height="250">
 <img src="http://i.imgur.com/jVMHHvS.jpg" height="250">
 
 #### 02 - Mapping and Geolocation
 
+* Map the users location and path on a map.
+
 <img src="http://i.imgur.com/FjDD8m4.jpg" height="250">
 
 #### 03 - Acceleration & Rotation Sensors and 3D
 
+* Access the acceleration sensors to change the background colour of the page depending on how fast the device is accelerating.
+* Use the rotation sensors to move a 3d cube on the page.
+
 <img src="http://i.imgur.com/lj2JAd3.png" height="250">
 
+#### 04 - Gamepad & Pong
+
+* Use a USB game controller to move an HTML element.
+* Using canvas, build a pong that can be controlled by the gamepad.
+
+<img src="http://i.imgur.com/U7MF6Tc.jpg" height="250">
 
 
 # How-Tos
