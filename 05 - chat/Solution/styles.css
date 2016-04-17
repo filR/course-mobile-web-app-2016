@@ -7,8 +7,8 @@
 body {
     background: hsl(173, 82%, 43%);
     font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 5vmin;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 5vw;
     height: 100vh;
     
     display: flex;
@@ -52,6 +52,7 @@ header input:focus {
 li {
     list-style-type: none;
     margin: 2vmin 0;
+    font-size: 3vw;
 }
 
 .user {
