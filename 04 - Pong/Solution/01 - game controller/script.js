@@ -1,3 +1,5 @@
+// See: https://www.smashingmagazine.com/2015/11/gamepad-api-in-web-games/
+
 // keyboard ----
 var keys = {};
 

@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(173, 82%, 43%);
+    font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 5vmin;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 0;
+    font-size: inherit;
+}
+
+
+
+/* ---- top ---- */
+
+header {
+    background: white;
+    padding: 2vmin;
+}
+
+header input {
+    background: transparent;
+    padding: 1vmin;
+    color: hsl(173, 62%, 33%);
+    font-weight: bold;
+}
+
+header input:focus {
+    outline: none;
+}
+
+
+/* ---- middle ---- */
+
+#messages {
+    padding: 2vmin;
+    flex: 1;
+    overflow-y: auto;
+}
+
+li {
+    list-style-type: none;
+    margin: 2vmin 0;
+}
+
+.user {
+    margin-right: 1vmin;
+}
+
+.user:after {
+    content: ":";
+}
+
+
+
+/* ---- bottom ---- */
+
+#messageInput {
+    width: calc(100vw - 4vmin);
+    padding: 3vmin;
+    margin: 2vmin;
+}
