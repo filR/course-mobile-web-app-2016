@@ -30,10 +30,17 @@ These are the course materials for the University of Applied Sciences Upper Aust
 
 #### 04 - Gamepad & Pong
 
-* Use a USB game controller to move an HTML element.
-* Using canvas, build a pong that can be controlled by the gamepad.
+* Move a HTML element around using a USB game controller.
+* Build a pong that can be controlled via a gamepad.
 
 <img src="http://i.imgur.com/U7MF6Tc.jpg" height="250">
+
+#### 05 - Chat
+
+* Build a chat app using Firebase as a backend.
+
+<img src="http://i.imgur.com/GAh4RSR.png" height="250">
+
 
 
 # How-Tos
