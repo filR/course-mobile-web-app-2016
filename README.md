@@ -24,13 +24,13 @@ These are the course materials for the University of Applied Sciences Upper Aust
 #### 03 - Acceleration & Rotation Sensors and 3D
 
 * Access the acceleration sensors to change the background colour of the page depending on how fast the device is accelerating.
-* Use the rotation sensors to move a 3d cube on the page.
+* Use the rotation sensors to rotate a 3D cube.
 
 <img src="http://i.imgur.com/lj2JAd3.png" height="250">
 
 #### 04 - Gamepad & Pong
 
-* Move a HTML element around using a USB game controller.
+* Move an HTML element around using a USB game controller.
 * Build a pong that can be controlled via a gamepad.
 
 <img src="http://i.imgur.com/U7MF6Tc.jpg" height="250">
