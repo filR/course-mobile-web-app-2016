@@ -65,10 +65,48 @@ function draw() {
     getGamepadInput();
     clear(game.ctx, game.width, game.height);
 
+    // move the ball
+    ball.x += ball.speedX;
+    ball.y += ball.speedY;
+    
+    // if ball hits top or bottom
+    
    
-    // INSERT CODE HERE
+    // draw the ball
+    // ctx, x, y, radius, farbe
+    drawCircle(game.ctx,
+               ball.x, ball.y,
+               ball.radius, ball.color);
+    
+    // draw the paddles
+    drawRectangle(game.ctx,
+                  p1.x, p1.y,
+                  paddle.width, paddle.height,
+                  p1.color);
+    
+    drawRectangle(game.ctx,
+                  p2.x, p2.y,
+                  paddle.width, paddle.height,
+                  p2.color);
     
 }
 
 // run draw() every 30ms
 setInterval(draw, 30);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
