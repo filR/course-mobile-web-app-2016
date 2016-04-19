@@ -106,6 +106,10 @@ function draw() {
     }
     
     
+    // ai
+    p1.y = ball.y - paddle.height / 2;
+    
+    
     // if ball hits top or bottom
     if (ball.y - ball.radius <= 0) {
         ball.speedY *= -1;
