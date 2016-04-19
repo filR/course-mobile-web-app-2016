@@ -69,6 +69,43 @@ function draw() {
     ball.x += ball.speedX;
     ball.y += ball.speedY;
     
+    // move the paddle
+    p1.y += p1_direction * paddle.speed;
+    p2.y += p2_direction * paddle.speed;
+    
+    
+    // restrict paddle top/bottom
+    if (p1.y <= 0) {
+        p1.y = 0;
+    }
+    if (p2.y <= 0) {
+        p2.y = 0;
+    }
+    
+    if (p1.y + paddle.height >= game.height) {
+        p1.y = game.height - paddle.height;
+    }
+    if (p2.y + paddle.height >= game.height) {
+        p2.y = game.height - paddle.height;
+    }
+    
+    
+    // collision ball & paddle
+    if (ball.y + ball.radius >= p1.y &&
+        ball.y - ball.radius <= p1.y + paddle.height &&
+        ball.x - ball.radius <= p1.x + paddle.width) {
+        
+        ball.speedX *= -1.2;
+    }
+    
+    if (ball.y + ball.radius >= p2.y &&
+        ball.y - ball.radius <= p2.y + paddle.height &&
+        ball.x + ball.radius >= p2.x) {
+        
+        ball.speedX *= -1.2;
+    }
+    
+    
     // if ball hits top or bottom
     if (ball.y - ball.radius <= 0) {
         ball.speedY *= -1;
@@ -76,6 +113,12 @@ function draw() {
     
     if (ball.y + ball.radius >= game.height) {
         ball.speedY *= -1;
+    }
+    
+    // if ball hits left or right, reset
+    if ((ball.x - ball.radius <= 0) ||
+        (ball.x + ball.radius >= game.width)) {
+        new_ball();
     }
    
     // draw the ball
@@ -96,6 +139,8 @@ function draw() {
                   p2.color);
     
 }
+
+
 
 // run draw() every 30ms
 setInterval(draw, 30);
