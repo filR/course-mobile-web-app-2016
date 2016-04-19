@@ -70,7 +70,13 @@ function draw() {
     ball.y += ball.speedY;
     
     // if ball hits top or bottom
+    if (ball.y - ball.radius <= 0) {
+        ball.speedY *= -1;
+    }
     
+    if (ball.y + ball.radius >= game.height) {
+        ball.speedY *= -1;
+    }
    
     // draw the ball
     // ctx, x, y, radius, farbe
