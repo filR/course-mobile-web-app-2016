@@ -14,6 +14,8 @@ $('#message').keypress(function (e) {
             name: username,
             text: message
         });
+        
+        $('#message').val('');
     }
 });
 
@@ -46,4 +48,19 @@ app.limitToLast(20).on('child_added', function (data) {
     
     // append to our container
     $("#messages").append(element);
+    
+    // scroll to bottom
+    $("#messages")[0].scrollTop = $("#messages")[0].scrollHeight;
 });
+
+
+
+
+
+
+
+
+
+
+
+
