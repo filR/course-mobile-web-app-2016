@@ -4,11 +4,25 @@ var app = new Firebase('https://voll-coole-chatapp.firebaseio.com');
 
 // write data to server
 app.push({
-    name: 'Trump',
-    text: 'MAKING THE WEB COOL AGAIN'
+    name: 'Froggy',
+    text: 'Where is my pong?!'
 });
 
 // get last 20 and listen to updates
 app.limitToLast(20).on('child_added', function (data) {
-   data.val();
+   
+//        <li>
+//            <strong>Supraman:</strong>
+//            Your breathe is minty.
+//        </li>
+    
+    var name = data.val().name;
+    var text = data.val().text;
+    
+    var element = $('<li><strong>' + name +
+                    '</strong>: ' + text + '</li>');
+    
+    $("#messages").append(element);
+    
+    
 });
