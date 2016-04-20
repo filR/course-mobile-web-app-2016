@@ -2,11 +2,21 @@
 // create new firebase app
 var app = new Firebase('https://voll-coole-chatapp.firebaseio.com');
 
-// write data to server
-app.push({
-    name: 'Froggy',
-    text: 'Where is my pong?!'
+// send message
+$('#message').keypress(function (e) {
+    if (e.keyCode === 13) { // enter
+        
+        var username = $('#username').val();
+        var message = $('#message').val();
+        
+        // write data to server
+        app.push({
+            name: username,
+            text: message
+        });
+    }
 });
+
 
 // get last 20 and listen to updates
 app.limitToLast(20).on('child_added', function (data) {

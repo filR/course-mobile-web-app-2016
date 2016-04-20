@@ -40,6 +40,9 @@ header {
     background: white;
     margin: -2vmin;
     padding: 2vmin;
+    
+    position: relative;
+    z-index: 10;
 }
 
 li {
