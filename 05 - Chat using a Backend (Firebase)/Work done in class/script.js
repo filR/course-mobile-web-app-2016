@@ -19,6 +19,14 @@ app.limitToLast(20).on('child_added', function (data) {
     var name = data.val().name;
     var text = data.val().text;
     
+    if (!name) {
+        name = "Anonymous";
+    }
+    
+    if (!text) {
+        return;
+    }
+    
     var element = $('<li><strong>' + name +
                     '</strong>: ' + text + '</li>');
     
